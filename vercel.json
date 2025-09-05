@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/qr",
+      "destination": "https://goflowservices.com/",
+      "permanent": false
+    }
+  ]
+}
