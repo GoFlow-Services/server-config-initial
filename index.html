@@ -12,22 +12,22 @@
     rel="stylesheet">
   <link rel="icon" href="./Logo.ico">
   <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configuración para usar la fuente Inter -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        'primary-blue': '#4F7DF3',
-                        'dark-blue': '#385EDB',
-                    }
-                }
-            }
+  <!-- Configuración para usar la fuente Inter -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            'primary-blue': '#4F7DF3',
+            'dark-blue': '#385EDB',
+          }
         }
-    </script>
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -72,36 +72,30 @@
           other cleaning services to keep homes and businesses clean, healthy, and comfortable.</p>
         <a href="#contact" class="cta-button">REQUEST A QUOTE</a>
       </div>
-          <div class="carousel-container relative overflow-hidden rounded-xl">
-            <!-- Contenedor interno que se moverá para mostrar las imágenes -->
-            <div class="carousel-inner" id="carousel-inner">
-                <!-- Usando placeholders de imagen para simular el carrusel -->
-                <img src="./images/pic1.jpg" alt="Cleaning professional 1"
-                    class="carousel-image">
-                <img src="./images/pic2.jpeg" alt="Cleaning professional 2"
-                    class="carousel-image">
-                <img src="./images/pic3.jpg" alt="Cleaning professional 3"
-                    class="carousel-image">
-                <img src="./images/pic4.jpg" alt="Cleaning professional 4"
-                    class="carousel-image">
-                <img src="./images/pic5.jpg" alt="Cleaning professional 5"
-                    class="carousel-image">
-                <img src="./images/pic6.jpg" alt="Cleaning professional 6"
-                    class="carousel-image">
-                
-            </div>
+      <div class="carousel-container relative overflow-hidden rounded-xl">
+        <!-- Contenedor interno que se moverá para mostrar las imágenes -->
+        <div class="carousel-inner" id="carousel-inner">
+          <!-- Usando placeholders de imagen para simular el carrusel -->
+          <img src="./images/pic1.jpg" alt="Cleaning professional 1" class="carousel-image">
+          <img src="./images/pic2.jpeg" alt="Cleaning professional 2" class="carousel-image">
+          <img src="./images/pic3.jpg" alt="Cleaning professional 3" class="carousel-image">
+          <img src="./images/pic4.jpg" alt="Cleaning professional 4" class="carousel-image">
+          <img src="./images/pic5.jpg" alt="Cleaning professional 5" class="carousel-image">
+          <img src="./images/pic6.jpg" alt="Cleaning professional 6" class="carousel-image">
 
-            <!-- Controles (Puntos) -->
-            <div
-                class="carousel-controls absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 p-2 rounded-full bg-white bg-opacity-70">
-                <div class="control-dot rounded-full" data-index="0"></div>
-                <div class="control-dot rounded-full" data-index="1"></div>
-                <div class="control-dot rounded-full" data-index="2"></div>
-                <div class="control-dot rounded-full" data-index="3"></div>
-                <div class="control-dot rounded-full" data-index="4"></div>
-                <div class="control-dot rounded-full" data-index="5"></div>
-            </div>
         </div>
+
+        <!-- Controles (Puntos) -->
+        <div
+          class="carousel-controls absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 p-2 rounded-full bg-white bg-opacity-70">
+          <div class="control-dot rounded-full" data-index="0"></div>
+          <div class="control-dot rounded-full" data-index="1"></div>
+          <div class="control-dot rounded-full" data-index="2"></div>
+          <div class="control-dot rounded-full" data-index="3"></div>
+          <div class="control-dot rounded-full" data-index="4"></div>
+          <div class="control-dot rounded-full" data-index="5"></div>
+        </div>
+      </div>
     </div>
     </div>
   </section>
@@ -206,7 +200,7 @@
               <option value="air-duct">Furnace and Air Duct Cleaning</option>
               <option value="dryer-vent">Dryer Vent Cleaning</option>
               <option value="carpet">Carpet Cleaning</option>
-              <option value="dryer-vent">Other Cleaning (please specify)</option>
+              <option value="other">Other Cleaning (please specify)</option>
             </select>
           </div>
         </div>
@@ -216,7 +210,7 @@
             <div class="form-group">
               <label>Do you also want your dryer vent cleaned?</label>
               <div>
-                <input type="radio" id="dryer-yes" name="dryer-vent-option" value="yes" required>
+                <input type="radio" id="dryer-yes" name="dryer-vent-option" value="yes">
                 <label for="dryer-yes">Yes</label>
                 <input type="radio" id="dryer-no" name="dryer-vent-option" value="no">
                 <label for="dryer-no">No</label>
@@ -245,13 +239,13 @@
           </div>
         </div>
 
-        
+
 
         <div class="form-group full-width">
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Additional information" rows="5" required></textarea>
         </div>
-        
+
         <button type="submit" class="submit-btn">Submit</button>
       </form>
     </div>
@@ -264,18 +258,23 @@
           <img src="./logow.png" alt="GoFlow Cleaning Services">
         </div>
         <div class="social-icons">
-        <a href="https://www.facebook.com/profile.php?id=61580189712132" target="_blank" aria-label="Síguenos en Facebook">
+          <a href="https://www.facebook.com/profile.php?id=61580189712132" target="_blank"
+            aria-label="Síguenos en Facebook">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" fill="currentColor"/>
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                fill="currentColor" />
             </svg>
-        </a>
+          </a>
 
-        <a href="https://maps.app.goo.gl/nEkSWDRYoZL1RgtA6" target="_blank" aria-label="Síguenos en Google">
+          <a href="https://maps.app.goo.gl/nEkSWDRYoZL1RgtA6" target="_blank" aria-label="Síguenos en Google">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
-                <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C293.5 114.5 271.9 104 248 104c-84.5 0-153.1 66.8-153.1 149.6s68.6 149.6 153.1 149.6c89.7 0 141.6-60.8 143.7-160.8H248V256h236.8c.6 12.9.2 24.7.2 38.8z" fill="currentColor"/>
+              <path
+                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C293.5 114.5 271.9 104 248 104c-84.5 0-153.1 66.8-153.1 149.6s68.6 149.6 153.1 149.6c89.7 0 141.6-60.8 143.7-160.8H248V256h236.8c.6 12.9.2 24.7.2 38.8z"
+                fill="currentColor" />
             </svg>
-        </a>
-    </div>
+          </a>
+        </div>
 
         <p class="footer-copyright">© Copyright by GoFlow. All rights reserved</p>
       </div>
@@ -321,134 +320,280 @@
     </div>
   </footer>
 
+  <!-- EmailJS library -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Your custom script -->
+  <script>
+    // Initialize EmailJS (replace with your USER_ID)
+    emailjs.init('o4OMvgTA8pdstK10t'); // You get this from your EmailJS dashboard
+
+    // Function to collect and format all form data
+    function collectFormData(form) {
+      const formData = new FormData(form);
+      const selectedService = formData.get('service');
+
+      let emailContent = `
+<h2>New Quote Request - GoFlow Services</h2>
+
+<h3>Client Information:</h3>
+<p><strong>Name:</strong> ${formData.get('firstName')} ${formData.get('lastName')}</p>
+<p><strong>Email:</strong> ${formData.get('email')}</p>
+<p><strong>Address:</strong> ${formData.get('address')}</p>
+<p><strong>Preferred Date:</strong> ${formData.get('carpet-date') ? formatDate(formData.get('carpet-date')) : 'Not specified'}</p>
+
+<h3>Requested Service:</h3>
+<p><strong>Service Type:</strong> ${getServiceLabel(selectedService)}</p>
+`;
+
+      if (selectedService === 'air-duct') {
+        emailContent += `
+<h3>Air Duct Cleaning Details:</h3>
+<p><strong>Would you also like dryer vent cleaning?</strong> ${formData.get('dryer-vent-option') || 'Not specified'}</p>
+<p><strong>Building square footage:</strong> ${formData.get('squareFootage') || 'Not specified'} sq ft</p>
+<p><strong>Number of vents:</strong> ${formData.get('num-vents') || 'Not specified'}</p>
+`;
+      } else if (selectedService === 'carpet') {
+        emailContent += `
+<h3>Carpet Cleaning Details:</h3>
+<p><strong>Areas/rooms needing cleaning:</strong><br>${formData.get('rooms') || 'Not specified'}</p>
+<p><strong>Stains, pet issues, or specific concerns:</strong><br>${formData.get('stains') || 'None mentioned'}</p>
+`;
+      }
+
+      emailContent += `
+<h3>Additional Message:</h3>
+<p>${formData.get('message') || 'No additional message'}</p>
+
+<hr>
+<p><em>This form was submitted from the GoFlow Services website</em></p>
+<p><em>Submission date: ${new Date().toLocaleString()}</em></p>
+`;
+
+      return {
+        to_email: 'allan@goflowservices.com',
+        from_name: `${formData.get('firstName')} ${formData.get('lastName')}`,
+        reply_to: formData.get('email'),
+        subject: `New Quote - ${getServiceLabel(selectedService)} - ${formData.get('firstName')} ${formData.get('lastName')}`,
+        message_html: emailContent,
+        client_email: formData.get('email'),
+        client_name: `${formData.get('firstName')} ${formData.get('lastName')}`,
+        service_type: getServiceLabel(selectedService)
+      };
+    }
+
+    function getServiceLabel(serviceValue) {
+      const serviceLabels = {
+        'air-duct': 'Furnace and Air Duct Cleaning',
+        'dryer-vent': 'Dryer Vent Cleaning',
+        'carpet': 'Carpet Cleaning',
+        'other': 'Other Cleaning (please specify)'
+      };
+      return serviceLabels[serviceValue] || serviceValue || 'Not specified';
+    }
+
+    function formatDate(dateString) {
+      if (!dateString) return 'Not specified';
+      const date = new Date(dateString);
+      return date.toLocaleString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+    }
+
+    function showLoading(button) {
+      button.innerHTML = 'Sending...';
+      button.disabled = true;
+      button.style.opacity = '0.7';
+    }
+
+    function hideLoading(button) {
+      button.innerHTML = 'Submit';
+      button.disabled = false;
+      button.style.opacity = '1';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('quoteForm');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const submitButton = this.querySelector('.submit-btn');
+        showLoading(submitButton);
+
+        const templateParams = collectFormData(this);
+
+        emailjs.send('service_t6wf9bu', 'template_6ux387g', templateParams)
+          .then(function (response) {
+            console.log('Email sent successfully:', response);
+            alert('Thank you for your request! We will contact you within the next 24 hours.');
+            form.reset();
+            document.querySelector('.air-duct-fields').style.display = 'none';
+            document.querySelector('.carpet-fields').style.display = 'none';
+          })
+          .catch(function (error) {
+            console.error('Error sending email:', error);
+            alert('There was a problem sending your request. Please try again or contact us at (639) 994-7280.');
+          })
+          .finally(function () {
+            hideLoading(submitButton);
+          });
+      });
+    });
+
+    function validateForm(form) {
+      const requiredFields = form.querySelectorAll('[required]');
+      let isValid = true;
+
+      requiredFields.forEach(field => {
+        if (field.offsetParent !== null && !field.value.trim()) {
+          isValid = false;
+          field.style.borderColor = '#ef4444';
+        } else {
+          field.style.borderColor = '#e8efff';
+        }
+      });
+
+      return isValid;
+    }
+  </script>
+
+
   <script>
 
+
+
     const carouselInner = document.getElementById('carousel-inner');
-        const dots = document.querySelectorAll('.control-dot');
-        const totalSlides = dots.length;
-        let currentIndex = 0;
-        let autoPlayInterval;
+    const dots = document.querySelectorAll('.control-dot');
+    const totalSlides = dots.length;
+    let currentIndex = 0;
+    let autoPlayInterval;
 
-        // Variables para manejo táctil (swipe)
-        let touchStartX = 0;
-        let touchEndX = 0;
-        const swipeThreshold = 50; // Mínimo de píxeles para considerar un swipe
+    // Variables para manejo táctil (swipe)
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const swipeThreshold = 50; // Mínimo de píxeles para considerar un swipe
 
-        /**
-         * Mueve el carrusel a la diapositiva específica y actualiza los indicadores.
-         * @param {number} index El índice de la diapositiva a mostrar.
-         */
-        function goToSlide(index) {
-            // Asegura que el índice esté dentro de los límites
-            currentIndex = (index + totalSlides) % totalSlides;
-            
-            // Aplica la transformación para mover el contenedor.
-            // La traducción es el índice actual * -25% (25% es el ancho de cada imagen)
-            const transformValue = `translateX(-${currentIndex * 25}%)`;
-            carouselInner.style.transform = transformValue;
+    /**
+     * Mueve el carrusel a la diapositiva específica y actualiza los indicadores.
+     * @param {number} index El índice de la diapositiva a mostrar.
+     */
+    function goToSlide(index) {
+      // Asegura que el índice esté dentro de los límites
+      currentIndex = (index + totalSlides) % totalSlides;
 
-            // Actualiza la clase 'active' en los puntos de control
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === currentIndex);
-            });
-            
-            // Reinicia el auto-play al interactuar
-            resetAutoPlay();
+      // Aplica la transformación para mover el contenedor.
+      // La traducción es el índice actual * -25% (25% es el ancho de cada imagen)
+      const transformValue = `translateX(-${currentIndex * 25}%)`;
+      carouselInner.style.transform = transformValue;
+
+      // Actualiza la clase 'active' en los puntos de control
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+
+      // Reinicia el auto-play al interactuar
+      resetAutoPlay();
+    }
+
+    /**
+     * Muestra la siguiente diapositiva.
+     */
+    function nextSlide() {
+      goToSlide(currentIndex + 1);
+    }
+
+    /**
+     * Muestra la diapositiva anterior.
+     */
+    function prevSlide() {
+      goToSlide(currentIndex - 1);
+    }
+
+    /**
+     * Inicia el intervalo de auto-play.
+     */
+    function startAutoPlay() {
+      // Detiene cualquier intervalo existente primero
+      clearInterval(autoPlayInterval);
+      // Inicia un nuevo intervalo para avanzar cada 4 segundos
+      autoPlayInterval = setInterval(nextSlide, 4000);
+    }
+
+    /**
+     * Detiene y reinicia el intervalo de auto-play.
+     */
+    function resetAutoPlay() {
+      clearInterval(autoPlayInterval);
+      startAutoPlay();
+    }
+
+
+    // 1. Inicialización: Mostrar la primera diapositiva y activar el primer punto.
+    document.addEventListener('DOMContentLoaded', () => {
+      goToSlide(0); // Asegura que se inicializa en la posición 0
+      startAutoPlay(); // Inicia el auto-play
+    });
+
+
+    // 2. Manejo de clics en los puntos de control
+    dots.forEach(dot => {
+      dot.addEventListener('click', (event) => {
+        const index = parseInt(event.target.getAttribute('data-index'));
+        if (!isNaN(index)) {
+          goToSlide(index);
         }
-
-        /**
-         * Muestra la siguiente diapositiva.
-         */
-        function nextSlide() {
-            goToSlide(currentIndex + 1);
-        }
-
-        /**
-         * Muestra la diapositiva anterior.
-         */
-        function prevSlide() {
-            goToSlide(currentIndex - 1);
-        }
-        
-        /**
-         * Inicia el intervalo de auto-play.
-         */
-        function startAutoPlay() {
-            // Detiene cualquier intervalo existente primero
-            clearInterval(autoPlayInterval); 
-            // Inicia un nuevo intervalo para avanzar cada 4 segundos
-            autoPlayInterval = setInterval(nextSlide, 4000); 
-        }
-
-        /**
-         * Detiene y reinicia el intervalo de auto-play.
-         */
-        function resetAutoPlay() {
-            clearInterval(autoPlayInterval);
-            startAutoPlay();
-        }
+      });
+    });
 
 
-        // 1. Inicialización: Mostrar la primera diapositiva y activar el primer punto.
-        document.addEventListener('DOMContentLoaded', () => {
-            goToSlide(0); // Asegura que se inicializa en la posición 0
-            startAutoPlay(); // Inicia el auto-play
-        });
+    // 3. Manejo de eventos táctiles (Swipe para móviles)
+    const carouselContainer = document.querySelector('.carousel-container');
 
+    carouselContainer.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      // Detiene el auto-play mientras el usuario interactúa
+      clearInterval(autoPlayInterval);
+    }, false);
 
-        // 2. Manejo de clics en los puntos de control
-        dots.forEach(dot => {
-            dot.addEventListener('click', (event) => {
-                const index = parseInt(event.target.getAttribute('data-index'));
-                if (!isNaN(index)) {
-                    goToSlide(index);
-                }
-            });
-        });
+    carouselContainer.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+      // Reinicia el auto-play después de la interacción
+      resetAutoPlay();
+    }, false);
 
+    /**
+     * Determina la dirección del swipe y ejecuta la función de navegación correspondiente.
+     */
+    function handleSwipe() {
+      const distance = touchEndX - touchStartX;
 
-        // 3. Manejo de eventos táctiles (Swipe para móviles)
-        const carouselContainer = document.querySelector('.carousel-container');
+      if (distance > swipeThreshold) {
+        // Swipe hacia la derecha (diapositiva anterior)
+        prevSlide();
+      } else if (distance < -swipeThreshold) {
+        // Swipe hacia la izquierda (diapositiva siguiente)
+        nextSlide();
+      }
+    }
 
-        carouselContainer.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-            // Detiene el auto-play mientras el usuario interactúa
-            clearInterval(autoPlayInterval); 
-        }, false);
+    // 4. Manejo de eventos de mouse (para desktop)
+    carouselContainer.addEventListener('mousedown', (e) => {
+      touchStartX = e.screenX;
+      clearInterval(autoPlayInterval);
+    });
 
-        carouselContainer.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-            // Reinicia el auto-play después de la interacción
-            resetAutoPlay();
-        }, false);
-
-        /**
-         * Determina la dirección del swipe y ejecuta la función de navegación correspondiente.
-         */
-        function handleSwipe() {
-            const distance = touchEndX - touchStartX;
-
-            if (distance > swipeThreshold) {
-                // Swipe hacia la derecha (diapositiva anterior)
-                prevSlide();
-            } else if (distance < -swipeThreshold) {
-                // Swipe hacia la izquierda (diapositiva siguiente)
-                nextSlide();
-            }
-        }
-        
-        // 4. Manejo de eventos de mouse (para desktop)
-        carouselContainer.addEventListener('mousedown', (e) => {
-            touchStartX = e.screenX;
-            clearInterval(autoPlayInterval); 
-        });
-
-        carouselContainer.addEventListener('mouseup', (e) => {
-            touchEndX = e.screenX;
-            handleSwipe();
-            resetAutoPlay();
-        });
+    carouselContainer.addEventListener('mouseup', (e) => {
+      touchEndX = e.screenX;
+      handleSwipe();
+      resetAutoPlay();
+    });
 
     document.addEventListener('DOMContentLoaded', () => {
       const serviceSelect = document.getElementById('service');
@@ -562,7 +707,7 @@
       this.reset();
     });
 
-    
+
     // Active navigation
     window.addEventListener('scroll', () => {
       const sections = document.querySelectorAll('section[id]');
@@ -584,6 +729,8 @@
         }
       });
     });
+
+
 
 
   </script>
