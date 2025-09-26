@@ -1,237 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GoFlow Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="icon" href="./Logo.ico">
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-
-  <!-- AOS Animations -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: "Inter", sans-serif;
-      background-color: #ffffff;
-      color: #262261;
-    }
-
-    /* Header */
-    header {
-      background: linear-gradient(135deg, #f9faff, #eef2ff);
-      border-bottom: 1px solid #eaeaea;
-    }
-
-    .logo img {
-      max-height: 60px;
-    }
-
-    .phone {
-      font-weight: 600;
-      font-size: 1.2rem;
-      color: #385EDB;
-      text-decoration: none;
-    }
-
-    .phone:hover {
-      opacity: 0.8;
-    }
-
-    /* Hero con degradado */
-    .hero {
-      padding: 8rem 2rem;
-      text-align: center;
-      background: linear-gradient(135deg, #e8f0ff 0%, #f9faff 50%, #eef3ff 100%);
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 700;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: #444;
-      margin: 1.5rem 0;
-    }
-
-    /* CTA buttons */
-    .cta {
-      padding: 0.8rem 2rem;
-      border-radius: 50px;
-      font-weight: 600;
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      display: inline-block;
-    }
-
-    .cta-primary {
-      background: #f9faff;
-      border: 2px solid #385EDB;
-      color: #385EDB;
-    }
-
-    .cta-primary:hover {
-      background: #385EDB;
-      color: #fff;
-      transform: translateY(-3px);
-    }
-
-    .cta-secondary {
-      background: #385EDB;
-      color: #fff;
-    }
-
-    .cta-secondary:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(56, 94, 219, 0.4);
-    }
-
-    /* Services */
-    .service-card {
-      border: none;
-      border-radius: 1rem;
-      padding: 2rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      background: #fff;
-    }
-
-    .service-card:hover {
-      transform: translateY(-8px);
-    }
-
-    .service-card h5 {
-      font-weight: 700;
-      color: #385EDB;
-      margin-top: 1rem;
-    }
-
-    .service-icon {
-      filter: invert(30%) sepia(100%) saturate(5000%) hue-rotate(200deg);
-    }
-
-    /* About */
-    .about-section {
-      background: #f7f9fc;
-      padding: 5rem 2rem;
-    }
-
-    .about-section p {
-      max-width: 750px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-      color: #444;
-    }
-
-    /* Contact */
-    .contact-section {
-      padding: 5rem 2rem;
-      text-align: center;
-    }
-
-    .contact-section p {
-      font-size: 1.1rem;
-      color: #444;
-    }
-
-    /* Footer */
-    footer {
-      border-top: 1px solid #eaeaea;
-      padding: 1.5rem 0;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#4F7DF3',
+                        'dark-blue': '#385EDB',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
 
-  <!-- HEADER -->
-  <header class="py-3">
-    <div class="container d-flex justify-content-between align-items-center">
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
       <div class="logo">
         <img src="./logo.png" alt="GoFlow Cleaning Services">
       </div>
-      <a href="tel:+16399947280" class="phone">📞 (639) 994-7280</a>
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <div class="dropdown">
+          <a href="#services" class="nav-link dropdown-toggle">Services <span class="dropdown-arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="#air-duct" class="dropdown-item">Air Duct Cleaning</a>
+            <a href="#carpet" class="dropdown-item">Carpet Cleaning</a>
+            <a href="#house" class="dropdown-item">House Cleaning</a>
+          </div>
+        </div>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="contact-info">
+        <a href="tel:+16399947280" class="phone-button">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"
+              fill="currentColor" />
+          </svg>
+          <span>(639) 994-7280</span>
+        </a>
+      </div>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="container" data-aos="fade-up">
-      <h1>GoFlow Services</h1>
-      <p>Get ready for our new website, launching soon! It's being designed to showcase the excellence of our services</p>
-      <a href="mailto:allan@goflowservices.com" class="cta cta-primary">📧 Contact Us</a>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Professional Furnace & Air Duct Cleaning Services in Saskatoon</h1>
+        <p>We are a family-owned business proudly serving Saskatoon. We provide professional HVAC cleaning services and
+          other cleaning services to keep homes and businesses clean, healthy, and comfortable.</p>
+        <a href="#contact" class="cta-button">REQUEST A QUOTE</a>
+      </div>
+          <div class="carousel-container relative overflow-hidden rounded-xl">
+            <!-- Contenedor interno que se moverá para mostrar las imágenes -->
+            <div class="carousel-inner" id="carousel-inner">
+                <!-- Usando placeholders de imagen para simular el carrusel -->
+                <img src="./images/pic1.jpg" alt="Cleaning professional 1"
+                    class="carousel-image">
+                <img src="./images/pic2.jpeg" alt="Cleaning professional 2"
+                    class="carousel-image">
+                <img src="./images/pic3.jpg" alt="Cleaning professional 3"
+                    class="carousel-image">
+                <img src="./images/pic4.jpg" alt="Cleaning professional 4"
+                    class="carousel-image">
+                <img src="./images/pic5.jpg" alt="Cleaning professional 5"
+                    class="carousel-image">
+                <img src="./images/pic6.jpg" alt="Cleaning professional 6"
+                    class="carousel-image">
+                
+            </div>
+
+            <!-- Controles (Puntos) -->
+            <div
+                class="carousel-controls absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 p-2 rounded-full bg-white bg-opacity-70">
+                <div class="control-dot rounded-full" data-index="0"></div>
+                <div class="control-dot rounded-full" data-index="1"></div>
+                <div class="control-dot rounded-full" data-index="2"></div>
+                <div class="control-dot rounded-full" data-index="3"></div>
+                <div class="control-dot rounded-full" data-index="4"></div>
+                <div class="control-dot rounded-full" data-index="5"></div>
+            </div>
+        </div>
+    </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="py-5">
-    <div class="container text-center">
-      <h2 class="mb-5" data-aos="fade-up">Our Services</h2>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-          <div class="service-card h-100">
-            <img src="https://octanecdn.com/zrengine/images/svg/icon-air-ducts.svg" alt="Icon" class="service-icon" width="50">
-            <h5>Air Duct Cleaning</h5>
-            <p>We clear out dust, debris, and allergens from your ducts to keep your air clean and your HVAC system running efficiently.</p>
+  <!-- Services Section -->
+  <section class="services">
+    <div class="services-container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon carpet">
+            <img src="/assets/furnace-icon.svg" alt="IconFurnaceCleaning" width="50">
           </div>
+          <h3>Furnace Cleaning</h3>
+          <p>From classic furnaces from the 70s to today's high-efficiency gas models, we've seen it all. Our cleaning
+            helps your furnace run at peak performance improving efficiency, lowering your energy bills, and keeping
+            your home comfortably warm all season long.</p>
         </div>
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-          <div class="service-card h-100">
-            <img src="/assets/furnace-icon.svg" alt="Icon" class="service-icon" width="34">
-            <h5>Furnace Cleaning</h5>
-            <p>Our service removes built-up dust, dirt, and debris to keep your heating system running efficiently, and extend its lifespan.</p>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="svg-icon" id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1"
+              viewBox="0 0 286.49 276.88">
+              <path
+                d="M58.44,150.97c.5-.31.49-.7.55-1.22.83-7.08-.46-14.14.79-21.78,5.18-31.65,31.02-59.29,62.66-65.36,6.21-5.76,12.16-14.72,20.23-17.86,8.19-3.19,17.04-.82,25.48-2.02,8.67-13.9,16.81-28.12,25.09-42.26.2-.35,0-.46.62-.47.52,0,6.29,3.08,7.02,3.6.29.21.64.32.54.78l-27.9,47.07c-8.77,1.04-21.96-2.09-29.66,2.61-3,1.83-4.91,4.47-7.29,6.82-6.33,6.26-12.51,12.65-18.89,18.84-2.84,4.69.95,9.7,6.18,7.94l19.58-19.22c3.39,2.27,6.81,4.62,10.76,5.83,9.68,2.97,26.42,3.3,30.02-8.6.71-.5,5.32,1.4,6.4,1.81,4.97,1.91,9.89,4.69,14.48,7.39.72.43,4.22,2.93,4.47,2.75L256.46.18c.24-.19.45-.07.7,0,.4.1,6.1,3.29,6.35,3.56.43.46.44.73.28,1.33l-47.23,78.38.12.46c13.81,11.4,23.44,28.19,27.55,45.63,5.91,25.12.83,52.88,2.71,78.4,1.07,14.42,10.78,27.54,24.68,31.74,1.49.45,5.56,1.59,6.88,1.59h8.29v8.64c-1.06.86-3.34.6-4.78.54-25.04-.96-42.46-19.21-43.89-43.93-1.59-27.51,4.36-58.79-5.49-84.8-7.83-20.68-23.58-36.68-43.8-45.46-.78-.11-3.36,2.54-4.36,3.26-8.95,6.49-22.55,6.46-32.75,3.21-1.42-.45-6.78-3.14-7.51-2.95-7.29,5.67-12.31,16.73-22.51,17.09-.69,7.5-1.99,16.73,8.86,14.25v-7.94c0-.65,1.27-3.56,1.7-4.3,4.21-7.37,14.17-8.63,20.35-3,4.89-4.56,13.25-4.85,18.03.04,5.58-4.43,12.42-4.87,17.94-.08,2.6-1.75,5.52-3.46,8.8-3.42,12.78.15,14.07,11.05,13.61,21.36-.08,1.76-.61,3.79-.69,5.59.66.79,1.24.1,2.04,1.15,4,5.28,7.11,18.38,7.47,24.98,1.13,20.85-1.43,43.14-.03,63.86.34,5.05,7.66,37.69,35.04,52.42,8.9,4.78,17.42,6.29,23.16,6.81l-9.17,6.88c-23.15-4.21-42.28-19.89-51.55-41.38-11.46-26.57-4.25-61.73-6.29-90.34-.44-6.23-2.89-12.28-5.68-17.77l-.76.02c-5.09,3.52-11.33,2.19-15.95-1.36-5.4,4.63-12.56,4.46-17.99,0-5.29,4.54-12.45,4.57-17.64-.13-4.44,3.6-10.21,4.83-15.46,2.07-2.92-1.53-4.42-3.89-6.11-6.58-3.7-.13-6.71.33-10.23-1.05-5.61-2.2-8.5-7.14-8.23-13.11-.27,0-.56-.04-.83.05-.45.16-4.76,4.01-5.4,4.66-9.5,9.72-13.34,25.88-11.78,39.22.06.51.04.91.55,1.22h34.91l.53-.53v-13.4c.99-1.23,2.57-.15,3.7-.18,1.35-.03,2.95-.82,4.41-.18l.63.78-.28,21.97H18.06v-71.95h45.14v7.94c-.75.67-2.29.81-3.34.89-8.42.67-19.99.27-28.59,0-1.43-.04-3.26-1.04-4.39.16v54.49h31.56ZM67.96,150.97h17.63c1.24-1.47.18-3.72.16-5.45-.05-4.47.38-9.99,1.18-14.37,2.78-15.09,12.4-29.46,26.32-36.28.59-.85-1.91-2.63-2.44-3.34-2.85-3.81-3.71-8.6-2.29-13.21.16-.51,1.59-2.38.34-2.13-20.55,9.98-36.38,29.77-40.27,52.49-1.01,5.89-1.87,15.21-1.19,21.07.06.51.04.91.55,1.22ZM142.45,101.32c-1.21.28-2.75,2.17-2.99,3.36-.32,1.59-.34,9.54-.06,11.19.77,4.59,8,4.49,8.78,0,.31-1.82.26-8.98-.01-10.88-.39-2.76-3.03-4.28-5.71-3.66ZM160.44,101.33c-1.66.34-2.72,1.73-2.99,3.35-.35,2.12-.34,8.3-.08,10.5.59,5.16,7.77,5.38,8.74.62.36-1.79.31-8.54.08-10.5-.36-3.15-2.65-4.61-5.74-3.97ZM183.35,102.76c-1.46-1.83-5.34-2.11-6.96-.29-1.88,2.12-2.06,13.21-.23,15.24,2.33,2.6,7.2,1.66,7.92-1.91.38-1.87.29-8.43.08-10.5-.07-.69-.4-2.02-.81-2.54ZM196.41,101.33c-1.5.31-2.59,1.57-3,3,.46,3.41-1.61,10.85.82,13.48,1.92,2.08,5.91,1.85,7.23-.85,1.07-2.18,1.02-10.6.15-12.88s-2.77-3.24-5.2-2.75Z" />
+              <path
+                d="M157.36,170.19c-.56,3.61-4.26,6.75-7.92,6.89H8.34c-4.02-.52-7.21-3.47-7.58-7.58v-92.08c.35-3.89,3.51-6.87,7.23-7.58,19.4-.18,38.82.26,58.22.03,4.5-.06,9.19-.78,13.74-.37.4.04,1.5.16,1.6.59v8.23H9.59l.02,89.91,138.93.02v-31.21c0-1.09,2.85-.16,3.35-.18,1.74-.05,3.59-.86,5.47,0v33.33Z" />
+              <path
+                d="M287.15,269v7.88c-2.86-.16-5.72-.32-8.58-.47-3.25-.31-6.51-.62-9.76-.94l9.17-6.88c.21.03.43.07.64.1,2.84.1,5.69.2,8.53.31Z" />
+            </svg>
           </div>
+          <h3>Air Duct Cleaning</h3>
+          <p>We clear out dust, debris, and allergens from your ducts to keep your air clean and your HVAC system
+            running efficiently. We go above and beyond to ensure every inch of your ductwork is clean.</p>
         </div>
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="service-card h-100">
-            <img src="https://octanecdn.com/zrengine/images/svg/icon-carpet.svg" alt="Icon" class="service-icon" width="50">
-            <h5>Carpet Cleaning</h5>
-            <p>Deep cleaning that lifts dirt and stains, refreshes your space, and extends the life of your carpets.</p>
+
+        <div class="service-card">
+          <div class="service-icon house">
+            <img src="/assets/dryer-vent-cleaning.svg" alt="IconDryerVentCleaning" width="60">
           </div>
+          <h3>Dryer Vent Cleaning</h3>
+          <p>
+            Protect your home and family from potential fire hazards with GoFlow's professional dryer vent cleaning. By
+            removing lint and debris buildup, we restore optimal airflow, shorten drying times, lower energy costs, and
+            extend the life of your dryer.</p>
+        </div>
+        <div class="service-card solo-card">
+          <div class="service-icon carpet">
+            <img src="/assets/carpet-cleaning.svg" alt="IconCarpetCleaning" width="65">
+          </div>
+          <h3>Carpet Cleaning</h3>
+          <p>Deep cleaning that lifts dirt, stains, refreshes your space, and extends the life of your carpets. Our
+            carpet cleaning process is not just any cleaning, it's science based.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about-section text-center">
-    <div class="container" data-aos="fade-up">
-      <h2 class="mb-4">About GoFlow Services</h2>
-      <p>
-        GoFlow Services is a family-owned business proudly serving Saskatoon. We specialize in air duct cleaning, carpet cleaning, and other building services to keep homes and businesses clean, healthy, and comfortable.
-      </p>
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Hear it From Our Clients</h2>
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-3de1c396-3881-460b-8313-b03b8c79f91b" data-elfsight-app-lazy></div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact-section">
-    <div class="container" data-aos="fade-up">
-      <h2 class="mb-4">Stay Connected</h2>
-      <p>Have questions or want to work with us?<br>Drop us a message directly by email.</p>
-      <a href="mailto:allan@goflowservices.com" class="cta cta-secondary">✉️ allan@goflowservices.com</a>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-header">
+        <h2>Get a Free Quote!</h2>
+      </div>
+      <form class="contact-form" id="quoteForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">Your name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Your Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="address">What’s your address?</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="carpet-date">What is your preferred date and time for the cleaning?</label>
+            <input type="datetime-local" id="carpet-date" name="carpet-date">
+          </div>
+          <div class="form-group">
+            <label for="service">What kind of service are you looking for?</label>
+            <select id="service" name="service" required>
+              <option value="">Type a service</option>
+              <option value="air-duct">Furnace and Air Duct Cleaning</option>
+              <option value="dryer-vent">Dryer Vent Cleaning</option>
+              <option value="carpet">Carpet Cleaning</option>
+              <option value="dryer-vent">Other Cleaning (please specify)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-additional air-duct-fields" style="display: none;">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Do you also want your dryer vent cleaned?</label>
+              <div>
+                <input type="radio" id="dryer-yes" name="dryer-vent-option" value="yes" required>
+                <label for="dryer-yes">Yes</label>
+                <input type="radio" id="dryer-no" name="dryer-vent-option" value="no">
+                <label for="dryer-no">No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="squareFootage">Square Footage of Building?</label>
+              <input type="number" id="squareFootage" name="squareFootage" placeholder="Enter square footage">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="num-vents">How many vents do you have?</label>
+            <input type="number" id="num-vents" name="num-vents" placeholder="e.g., 8">
+          </div>
+        </div>
+
+        <div class="form-additional carpet-fields" style="display: none;">
+          <div class="form-group">
+            <label for="rooms">What areas/rooms need carpet cleaning?</label>
+            <textarea id="rooms" name="rooms" rows="3" placeholder="e.g., 2 bedrooms, living room, hallway"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="stains">Do you have any stains, pet issues, or specific concerns?</label>
+            <textarea id="stains" name="stains" rows="3"
+              placeholder="e.g., Pet urine stains, red wine spill"></textarea>
+          </div>
+        </div>
+
+        
+
+        <div class="form-group full-width">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Additional information" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
     </div>
   </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="./logow.png" alt="GoFlow Cleaning Services">
+        </div>
+        <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61580189712132" target="_blank" aria-label="Síguenos en Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" fill="currentColor"/>
+            </svg>
+        </a>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© <span id="year"></span> GoFlow Cleaning Services. All rights reserved.</p>
+        <a href="https://maps.app.goo.gl/nEkSWDRYoZL1RgtA6" target="_blank" aria-label="Síguenos en Google">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+                <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C293.5 114.5 271.9 104 248 104c-84.5 0-153.1 66.8-153.1 149.6s68.6 149.6 153.1 149.6c89.7 0 141.6-60.8 143.7-160.8H248V256h236.8c.6 12.9.2 24.7.2 38.8z" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+
+        <p class="footer-copyright">© Copyright by GoFlow. All rights reserved</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <div class="contact-item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8 0c-2.76 0-5 2.24-5 5a5 5 0 00.26 1.48L8 16l4.74-9.52A5 5 0 0013 5c0-2.76-2.24-5-5-5zm0 7.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+          </svg>
+          Saskatoon, SK
+        </div>
+        <div class="contact-item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"
+              fill="currentColor" />
+          </svg>
+          (639) 994-7260
+        </div>
+        <div class="contact-item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 4.5L8 8.5L13.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M2 13H14C14.552 13 15 12.552 15 12V4C15 3.448 14.552 3 14 3H2C1.448 3 1 3.448 1 4V12C1 12.552 1.448 13 2 13Z"
+              stroke="currentColor" stroke-width="1.5" />
+          </svg>
+          allan@goflowservices.com
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Hours</h4>
+        <div class="hours-item">
+          <strong>Monday to Friday</strong>
+          <span>6:00 AM - 9:00 PM</span>
+        </div>
+        <div class="hours-item">
+          <strong>Saturday & Sunday</strong>
+          <span>8:00 AM - 6:00 PM</span>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
-    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const carouselInner = document.getElementById('carousel-inner');
+        const dots = document.querySelectorAll('.control-dot');
+        const totalSlides = dots.length;
+        let currentIndex = 0;
+        let autoPlayInterval;
+
+        // Variables para manejo táctil (swipe)
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const swipeThreshold = 50; // Mínimo de píxeles para considerar un swipe
+
+        /**
+         * Mueve el carrusel a la diapositiva específica y actualiza los indicadores.
+         * @param {number} index El índice de la diapositiva a mostrar.
+         */
+        function goToSlide(index) {
+            // Asegura que el índice esté dentro de los límites
+            currentIndex = (index + totalSlides) % totalSlides;
+            
+            // Aplica la transformación para mover el contenedor.
+            // La traducción es el índice actual * -25% (25% es el ancho de cada imagen)
+            const transformValue = `translateX(-${currentIndex * 25}%)`;
+            carouselInner.style.transform = transformValue;
+
+            // Actualiza la clase 'active' en los puntos de control
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentIndex);
+            });
+            
+            // Reinicia el auto-play al interactuar
+            resetAutoPlay();
+        }
+
+        /**
+         * Muestra la siguiente diapositiva.
+         */
+        function nextSlide() {
+            goToSlide(currentIndex + 1);
+        }
+
+        /**
+         * Muestra la diapositiva anterior.
+         */
+        function prevSlide() {
+            goToSlide(currentIndex - 1);
+        }
+        
+        /**
+         * Inicia el intervalo de auto-play.
+         */
+        function startAutoPlay() {
+            // Detiene cualquier intervalo existente primero
+            clearInterval(autoPlayInterval); 
+            // Inicia un nuevo intervalo para avanzar cada 4 segundos
+            autoPlayInterval = setInterval(nextSlide, 4000); 
+        }
+
+        /**
+         * Detiene y reinicia el intervalo de auto-play.
+         */
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+
+
+        // 1. Inicialización: Mostrar la primera diapositiva y activar el primer punto.
+        document.addEventListener('DOMContentLoaded', () => {
+            goToSlide(0); // Asegura que se inicializa en la posición 0
+            startAutoPlay(); // Inicia el auto-play
+        });
+
+
+        // 2. Manejo de clics en los puntos de control
+        dots.forEach(dot => {
+            dot.addEventListener('click', (event) => {
+                const index = parseInt(event.target.getAttribute('data-index'));
+                if (!isNaN(index)) {
+                    goToSlide(index);
+                }
+            });
+        });
+
+
+        // 3. Manejo de eventos táctiles (Swipe para móviles)
+        const carouselContainer = document.querySelector('.carousel-container');
+
+        carouselContainer.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+            // Detiene el auto-play mientras el usuario interactúa
+            clearInterval(autoPlayInterval); 
+        }, false);
+
+        carouselContainer.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+            // Reinicia el auto-play después de la interacción
+            resetAutoPlay();
+        }, false);
+
+        /**
+         * Determina la dirección del swipe y ejecuta la función de navegación correspondiente.
+         */
+        function handleSwipe() {
+            const distance = touchEndX - touchStartX;
+
+            if (distance > swipeThreshold) {
+                // Swipe hacia la derecha (diapositiva anterior)
+                prevSlide();
+            } else if (distance < -swipeThreshold) {
+                // Swipe hacia la izquierda (diapositiva siguiente)
+                nextSlide();
+            }
+        }
+        
+        // 4. Manejo de eventos de mouse (para desktop)
+        carouselContainer.addEventListener('mousedown', (e) => {
+            touchStartX = e.screenX;
+            clearInterval(autoPlayInterval); 
+        });
+
+        carouselContainer.addEventListener('mouseup', (e) => {
+            touchEndX = e.screenX;
+            handleSwipe();
+            resetAutoPlay();
+        });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const serviceSelect = document.getElementById('service');
+      const airDuctFields = document.querySelector('.air-duct-fields');
+      const carpetFields = document.querySelector('.carpet-fields');
+
+      function toggleFormFields() {
+        const selectedService = serviceSelect.value;
+
+        // Oculta todos los campos adicionales
+        airDuctFields.style.display = 'none';
+        carpetFields.style.display = 'none';
+
+        // Muestra los campos correspondientes a la opción seleccionada
+        if (selectedService === 'air-duct') {
+          airDuctFields.style.display = 'block';
+        } else if (selectedService === 'carpet') {
+          carpetFields.style.display = 'block';
+        }
+      }
+
+      // Llama a la función cuando cambia la selección
+      serviceSelect.addEventListener('change', toggleFormFields);
+
+      // Llama a la función al cargar la página por si hay una opción preseleccionada
+      toggleFormFields();
+    });
+    // Añade esto a tu script existente
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const dropdownContainer = document.querySelector('.dropdown');
+
+    dropdownToggle.addEventListener('click', (event) => {
+      event.preventDefault(); // Previene que el enlace de Services salte
+      dropdownContainer.classList.toggle('active');
+    });
+
+    // Cierra el menú cuando se hace clic fuera de él
+    document.addEventListener('click', (event) => {
+      if (!dropdownContainer.contains(event.target)) {
+        dropdownContainer.classList.remove('active');
+      }
+    });
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Testimonial functionality
+    const testimonials = [
+      { name: "Name name", text: "Training programs can bring you a major exciting experience of learning through online! You never face any negative experience and enjoy your online learning at Corona Awesome. Jon, on the top advertising a Course available Available online learning." },
+      { name: "Maria Garcia", text: "GoFlow Cleaning transformed our office completely! Their attention to detail and professional service exceeded all our expectations. Highly recommended!" },
+      { name: "John Smith", text: "Best cleaning service in Saskatoon. They're reliable, thorough, and always leave our home spotless. Worth every penny!" },
+      { name: "Sarah Johnson", text: "Professional carpet cleaning service that actually works! Our carpets look brand new after their treatment." },
+      { name: "Lisa Chen", text: "Air duct cleaning made such a difference in our home's air quality. The team was knowledgeable and efficient." }
+    ];
+
+    let currentTestimonial = 0;
+
+    function updateTestimonial(index) {
+      const testimonial = testimonials[index];
+      document.querySelector('.testimonial-name').textContent = testimonial.name;
+      document.querySelector('.testimonial-text').textContent = testimonial.text;
+
+      document.querySelectorAll('.avatar').forEach((avatar, i) => {
+        avatar.classList.toggle('active', i === index);
+      });
+    }
+
+    document.querySelector('.nav-arrow.prev').addEventListener('click', () => {
+      currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+      updateTestimonial(currentTestimonial);
+    });
+
+    document.querySelector('.nav-arrow.next').addEventListener('click', () => {
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      updateTestimonial(currentTestimonial);
+    });
+
+    document.querySelectorAll('.avatar').forEach((avatar, index) => {
+      avatar.addEventListener('click', () => {
+        currentTestimonial = index;
+        updateTestimonial(currentTestimonial);
+      });
+    });
+
+    // Form submission
+    document.querySelector('.contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Basic validation
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+
+      if (!data.firstName || !data.lastName || !data.email || !data.service || !data.message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      // Success message
+      alert('Thank you for your message! We will get back to you within 24 hours.');
+      this.reset();
+    });
+
+    
+    // Active navigation
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+
   </script>
 </body>
+
 </html>
