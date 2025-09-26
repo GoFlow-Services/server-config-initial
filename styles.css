@@ -541,7 +541,12 @@ body {
     padding: 100px 0;
     background: linear-gradient(135deg, #f8faff 0%, #e8efff 100%);
     position: relative;
+    padding: 45px 0;
 }
+
+ .contact-header {
+    margin-bottom: 40px; 
+    }
 
 .contact-header h2{
     color:#ff0000
@@ -1392,7 +1397,12 @@ body {
 
     /* Contact Mobile */
     .contact {
-        padding: 80px 0;
+        padding: 45px 0;
+    }
+
+
+    .contact-header {
+    margin-bottom: 45px; 
     }
 
     .contact-header h2 {
