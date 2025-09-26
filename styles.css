@@ -1507,3 +1507,45 @@ body {
         font-size: 14px;
     }
 }
+
+@media (max-width: 375px) {
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 14px; /* Reduce el padding interno */
+        font-size: 14px; /* Reduce el tamaño de fuente */
+    }
+    
+    .form-group label {
+        font-size: 14px; /* Labels más pequeños */
+        margin-bottom: 8px;
+    }
+    
+    .contact-form {
+        padding: 24px 16px; /* Reduce el padding del contenedor */
+    }
+    
+    .form-row {
+        gap: 16px; /* Reduce el espacio entre elementos */
+    }
+}
+
+@media (max-width: 320px) {
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px; /* Aún más pequeño para 320px */
+        font-size: 13px;
+        min-width: 0; /* Permite que se compriman */
+    }
+    
+    .contact-form {
+        padding: 20px 12px; /* Menos padding en los bordes */
+        margin: 0 8px; /* Menos margen externo */
+    }
+    
+    .form-group label {
+        font-size: 13px;
+        line-height: 1.3; /* Mejora el espaciado del texto */
+    }
+}
