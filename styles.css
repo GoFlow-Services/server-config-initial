@@ -1545,7 +1545,7 @@ body {
     .form-group input,
     .form-group select,
     .form-group textarea {
-        padding: 10px 12px; /* Aún más pequeño para 320px */
+        padding: 10px 8xpx; /* Aún más pequeño para 320px */
         font-size: 13px;
         min-width: 0; /* Permite que se compriman */
     }
