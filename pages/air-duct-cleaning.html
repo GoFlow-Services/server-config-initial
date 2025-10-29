@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoFlow Services | Furnace & Air Duct Cleaning</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/logos/Logo.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#4F7DF3',
+                        'dark-blue': '#385EDB',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/logos/logo.png" alt="GoFlow Cleaning Services">
+            </div>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="/index.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a href="#services" class="nav-link dropdown-toggle active">Services <span
+                            class="dropdown-arrow">▾</span></a>
+                    <div class="dropdown-menu">
+                        <a href="/pages/air-duct-cleaning.html" class="dropdown-item">
+                            <img src="/assets/air-duct-cleaning.svg" alt="Air Duct Icon" class="dropdown-icon">
+                            Furnace & Air Duct Cleaning
+                        </a>
+                        <a href="/pages/carpet-cleaning.html" class="dropdown-item">
+                            <img src="/assets/carpet-cleaning.svg" alt="Carpet Icon" class="dropdown-icon">
+                            Carpet Cleaning
+                        </a>
+                        <a href="/pages/residential-cleaning.html" class="dropdown-item">
+                            <img src="/assets/residential-cleaning.svg" alt="House Icon" class="dropdown-icon">
+                            Residential Cleaning
+                        </a>
+                    </div>
+                </div>
+                <a href="/pages/about.html" class="nav-link">About</a>
+                <a href="/pages/contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="contact-info">
+                <a href="tel:+16399947280" class="phone-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"
+                            fill="currentColor" />
+                    </svg>
+                    <span>(639) 994-7280</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="service-hero">
+            <div class="service-hero-container">
+                <div class="service-hero-content">
+                    <h1>Furnace & Air Duct Cleaning</h1>
+                    <p>Do you know what’s hiding inside your home’s air ducts? GoFlow’s air duct cleaning removes hidden
+                        dust, pet hair, and contaminants so you can enjoy a healthier air and a more efficient HVAC
+                        system.</p>
+                    <a href="/pages/contact.html" class="cta-button">REQUEST A QUOTE</a>
+                </div>
+                <div class="vertical-carousel-container relative overflow-hidden rounded-xl">
+                    <div class="carousel-inner" id="carousel-inner">
+                        <img src="/images/1service/1service7.png" alt="Cleaning professional 1" class="carousel-image">
+                        <img src="/images/1service/1service8.png" alt="Cleaning professional 2" class="carousel-image">
+                        <img src="/images/1service/1service9.png" alt="Cleaning professional 3" class="carousel-image">
+                    </div>
+                    <div
+                        class="carousel-controls absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 p-2 rounded-full bg-white bg-opacity-70">
+                        <div class="control-dot rounded-full" data-index="0"></div>
+                        <div class="control-dot rounded-full" data-index="1"></div>
+                        <div class="control-dot rounded-full" data-index="2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="container">
+                <h2 class="section-title">Benefits of Air Duct Cleaning</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 4C35.046 4 44 12.954 44 24C44 35.046 35.046 44 24 44C12.954 44 4 35.046 4 24C4 12.954 12.954 4 24 4Z"
+                                    fill="#D6E4FF" opacity="0.4" />
+                                <path
+                                    d="M24 8C32.837 8 40 15.163 40 24C40 32.837 32.837 40 24 40C15.163 40 8 32.837 8 24C8 15.163 15.163 8 24 8Z"
+                                    fill="#4F7DF3" opacity="0.6" />
+                                <path
+                                    d="M24 12C30.627 12 36 17.373 36 24C36 30.627 30.627 36 24 36C17.373 36 12 30.627 12 24C12 17.373 17.373 12 24 12Z"
+                                    fill="#4F7DF3" />
+                                <path d="M24 20L24 24M24 28V24" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M20 24H28" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Improved Indoor Air Quality</h3>
+                        <p>According to the EPA, indoor air can be 2 to 5 times
+                            more contaminated than outdoor air, and sometimes
+                            much more, because people spend about 90% of
+                            their time indoors.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- Fondo -->
+                                <circle cx="24" cy="24" r="20" fill="#D6E4FF" opacity="0.3" />
+                                <circle cx="24" cy="24" r="16" fill="#4F7DF3" opacity="0.2" />
+
+                                <!-- Bombilla LED -->
+                                <path
+                                    d="M24 8C19.6 8 16 11.6 16 16C16 18.4 17.2 20.6 19 22L19 28C19 29.1 19.9 30 21 30H27C28.1 30 29 29.1 29 28L29 22C30.8 20.6 32 18.4 32 16C32 11.6 28.4 8 24 8Z"
+                                    fill="#4F7DF3" />
+                                <rect x="20" y="30" width="8" height="3" rx="1" fill="#4F7DF3" opacity="0.6" />
+                                <rect x="21" y="33" width="6" height="2" rx="1" fill="#4F7DF3" opacity="0.4" />
+
+                                <!-- Rayos de ahorro energético -->
+                                <path d="M24 4V8M12 12L15 15M36 12L33 15M8 24H12M40 24H36M12 36L15 33M36 36L33 33"
+                                    stroke="#FFA500" stroke-width="2" stroke-linecap="round" />
+
+                                <!-- Símbolo de hoja (eco) -->
+                                <path d="M28 18C28 18 30 16 32 18C33 19 32 21 30 21C28 21 28 18 28 18Z" fill="#22C55E"
+                                    opacity="0.8" />
+                            </svg>
+                        </div>
+                        <h3>Energy Savings</h3>
+                        <p>According to the U.S. Department of Energy, 25 to 40
+                            percent of the energy used for heating or cooling a
+                            home is wasted. Our service helps your system to
+                            work more efficiently.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- Fondo -->
+                                <circle cx="24" cy="24" r="20" fill="#D6E4FF" opacity="0.3" />
+                                <circle cx="24" cy="24" r="16" fill="#4F7DF3" opacity="0.2" />
+
+                                <!-- Casa -->
+                                <path d="M12 22L24 12L36 22V36C36 37.1 35.1 38 34 38H14C12.9 38 12 37.1 12 36V22Z"
+                                    fill="#4F7DF3" />
+                                <path d="M12 22L24 12L36 22" stroke="#4F7DF3" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+
+                                <!-- Puerta y ventana -->
+                                <rect x="20" y="28" width="8" height="10" rx="1" fill="white" opacity="0.8" />
+                                <circle cx="30" cy="22" r="2" fill="white" opacity="0.6" />
+
+                                <!-- Herramientas (martillo + llave) -->
+                                <g transform="translate(8, 8)">
+                                    <path d="M6 14L10 10" stroke="#FFA500" stroke-width="2" stroke-linecap="round" />
+                                    <rect x="4" y="12" width="4" height="6" rx="1" fill="#FFA500" />
+                                    <path d="M12 8L14 10L18 6L16 4L12 8Z" fill="#FFA500" />
+                                </g>
+
+                                <!-- Checkmark de completado -->
+                                <circle cx="34" cy="14" r="6" fill="#22C55E" />
+                                <path d="M31 14L33 16L37 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Final Step After House Renovations</h3>
+                        <p>Renovation projects produce a lot of dust, drywall
+                            particles and other debris that can clog and
+                            contaminate your HVAC system. So if you air ducts
+                            look dirty, they probably are.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="container reverse-on-mobile">
+                <div class="info-content">
+                    <h2 class="section-title-small">Why choose GoFlow for Air Duct Cleaning</h2>
+
+                    <div class="why-choose-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="item-icon">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <path d="M8 7H6v10l6 3 6-3V7h-2"></path>
+                            <circle cx="12" cy="11" r="2"></circle>
+                        </svg>
+                        <p><strong>1. Local Experts</strong> <br> We understand how our local climate affects air
+                            quality
+                            and system performance, but also one of our team members is an HVAC engineer.</p>
+                    </div>
+
+                    <div class="why-choose-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="item-icon">
+                            <path d="M12 22s-8-4-8-10V5l8-3 8 3v7c0 6-8 10-8 10z"></path>
+                            <polyline points="9 12 12 15 15 9"></polyline>
+                        </svg>
+                        <p><strong>2. Certified Technicians</strong> <br> GoFlow is certified by Certified Ducts, which
+                            is
+                            an organization affiliated with QUADCA and HyperVac Technology.</p>
+                    </div>
+
+                    <div class="why-choose-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="item-icon">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg>
+                        <p><strong>3. Our Promise</strong> <br> When you choose GoFlow, you’re choosing a business that
+                            cares about your air, your home, and your family.</p>
+                    </div>
+
+                    <div class="why-choose-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="item-icon">
+                            <path d="M12 1v22"></path>
+                            <path d="M17 5H7l5 5L7 15h10l-5 5"></path>
+                            <path d="M18 10a6 6 0 0 0-12 0v5"></path>
+                        </svg>
+                        <p><strong>4. Transparent Pricing</strong> <br> You’ll always know the cost before we start — no
+                            surprises, no hidden fees.</p>
+                    </div>
+
+                    <div class="why-choose-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="item-icon">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                            </path>
+                        </svg>
+                        <p><strong>5. Equipment & Technique</strong> <br> At GoFlow, we believe that a job is only as
+                            good
+                            as the tools and equipment behind it.</p>
+                    </div>
+
+                    <div class="why-choose-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="item-icon">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <p><strong>6. Warranty</strong> <br> If you are not satisfied with your service 100%, just call
+                            us
+                            and we’ll work to make it right.</p>
+                    </div>
+
+                </div>
+                <div class="info-image">
+                    <img src="/images/1service/choose.jpeg" alt="A happy family sitting on a couch in a clean home">
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="section-title">Go Flow Air Duct Cleaning Process</h2>
+                <p class="process-intro">There are three basic steps to air duct cleaning, and the process typically
+                    takes between 1.5-3 hours.</p>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <span class="checkmark">✓</span>
+                        <h3>Step 1<br>Initial Inspection of Vents</h3>
+                        <p>Before we start any cleaning, we
+                            inspect your system from top to
+                            bottom — furnace condition,
+                            counting and checking each
+                            intake register, supply vent, and
+                            air lines to understand their
+                            current condition.</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="checkmark">✓</span>
+                        <h3>Step 2<br>Powerful Air Duct Cleaning System</h3>
+                        <p>Using our professional compression
+                            and suction tools, we remove built-
+                            up dusts and debris from your
+                            ductwork. Our process keeps your
+                            home clean while restoring healthy
+                            airflow throughout your ventilation
+                            system.</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="checkmark">✓</span>
+                        <h3>Step 3<br>Add-Ons</h3>
+                        <p>Once your ducts are spotless, we
+                            can go a step further with optional
+                            add-ons such as dryer vent
+                            cleaning, furnace cleaning and
+                            sanitazing. We’ll show
+                            you before-and-after pictures
+                            so you can actually see the
+                            difference GoFlow makes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="container reverse-on-mobile">
+                <div class="info-content">
+                    <h2 class="section-title-small">How Often Should HVAC Systems be Cleaned?</h2>
+                    <p>According to the National Air Duct Cleaners Association (NADCA), most homes benefit from a
+                        professional air duct cleaning every 2 to 5 years. The right schedule depends on your home and
+                        lifestyle, but you should consider cleaning your air ducts if:
+                    </p>
+
+                    <ul class="checklist">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="checkmark-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <p>You have pets that shed a lot of hair or dander.</p>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="checkmark-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <p>You’ve recently moved into a new home.</p>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="checkmark-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <p>You’ve done any renovations or remodeling</p>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="checkmark-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <p>Someone in your household has allergies or asthma.</p>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="checkmark-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <p>There’s been water damage or contamination in your HVAC system.</p>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="checkmark-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <p>You’ve installed or serviced new HVAC equipment.</p>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="checkmark-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <p>You’ve noticed pests, insects, or rodents in your ductwork.</p>
+                        </li>
+                    </ul>
+
+                    <a href="/pages/contact.html" class="cta-button schedule-button">SCHEDULE SERVICE <span
+                            class="arrow-right">›</span></a>
+
+                </div>
+                <div class="info-image">
+                    <img src="/images/1service/choose2.jpeg" alt="HVAC system cleaning frequency infographic">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            How do I know if my air ducts need to be cleaned?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>The EPA recommends duct cleaning if you see mold, signs of pests, or heavy dust buildup
+                                inside your vents. The National Air Duct Cleaners Association suggests cleaning every
+                                2–5
+                                years, or sooner if you’ve had renovations, water damage, allergies, or shedding pets.
+                                <br>
+                                If you’ve just moved into a new home or notice dust returning quickly after cleaning,
+                                it’s likely
+                                time for a professional duct cleaning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Does GoFlow offer duct cleaning in my area?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes! GoFlow proudly serves Saskatoon and surrounding areas, including nearby communities.
+                                We also consider jobs in other parts of Saskatchewan; however, a mileage fee may apply
+                                for locations outside our main service area.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Will my entire air duct system be cleaned?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes. GoFlow cleans all components of the heating and cooling system and is qualified to
+                                do so.
+                                We provide a full-service, system-wide clean. We clean your supply ducts and return
+                                ducts and
+                                the air handling units of contaminants, dirt, and debris . Cleaning coils and blowers is
+                                sometimes
+                                an additional service.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            How much does air duct cleaning cost with GoFlow?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Pricing is usually set per heating and cooling system (number of units) and then the size
+                                (based
+                                on square footage) of your home. However, things like system accessibility, level of
+                                contamination, and type of duct material could increase the price.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Does GoFlow clean dryer vents?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, GoFlow also cleans dryer vents, usually for an additional cost. Dryers that vent out
+                                to the
+                                2nd floor or higher will need to be assessed on site.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="/logos/logow.png" alt="GoFlow Cleaning Services">
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61580189712132" target="_blank"
+                        aria-label="Síguenos en Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/nEkSWDRYoZL1RgtA6" target="_blank" aria-label="Síguenos en Google">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="#4285F4"
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                            <path fill="#34A853"
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                            <path fill="#FBBC05"
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                            <path fill="#EA4335"
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                fill="currentColor" />
+
+                        </svg>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">© Copyright by GoFlow. All rights reserved</p>
+                <p class="footer-legal">
+                    <a href="/pages/privacypolicy.html" class="footer-link">Privacy Policy</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 0c-2.76 0-5 2.24-5 5a5 5 0 00.26 1.48L8 16l4.74-9.52A5 5 0 0013 5c0-2.76-2.24-5-5-5zm0 7.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                    </svg>
+                    Saskatoon, SK
+                </div>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"
+                            fill="currentColor" />
+                    </svg>
+                    (639) 994-7280
+                </div>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 4.5L8 8.5L13.5 4.5" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M2 13H14C14.552 13 15 12.552 15 12V4C15 3.448 14.552 3 14 3H2C1.448 3 1 3.448 1 4V12C1 12.552 1.448 13 2 13Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                    allan@goflowservices.com
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <div class="hours-item">
+                    <strong>Monday to Friday</strong>
+                    <span>6:00 AM - 9:00 PM</span>
+                </div>
+                <div class="hours-item">
+                    <strong>Saturday & Sunday</strong>
+                    <span>8:00 AM - 6:00 PM</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>

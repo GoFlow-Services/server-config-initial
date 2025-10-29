@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoFlow Services | Carpet Cleaning</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/logos/Logo.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#4F7DF3',
+                        'dark-blue': '#385EDB',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/logos/logo.png" alt="GoFlow Cleaning Services">
+            </div>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="/index.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a href="#services" class="nav-link dropdown-toggle active">Services <span
+                            class="dropdown-arrow">▾</span></a>
+                    <div class="dropdown-menu">
+                        <a href="/pages/air-duct-cleaning.html" class="dropdown-item">
+                            <img src="/assets/air-duct-cleaning.svg" alt="Air Duct Icon" class="dropdown-icon">
+                            Furnace & Air Duct Cleaning
+                        </a>
+                        <a href="/pages/carpet-cleaning.html" class="dropdown-item">
+                            <img src="/assets/carpet-cleaning.svg" alt="Carpet Icon" class="dropdown-icon">
+                            Carpet Cleaning
+                        </a>
+                        <a href="/pages/residential-cleaning.html" class="dropdown-item">
+                            <img src="/assets/residential-cleaning.svg" alt="House Icon" class="dropdown-icon">
+                            Residential Cleaning
+                        </a>
+                    </div>
+                </div>
+                <a href="/pages/about.html" class="nav-link">About</a>
+                <a href="/pages/contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="contact-info">
+                <a href="tel:+16399947280" class="phone-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"
+                            fill="currentColor" />
+                    </svg>
+                    <span>(639) 994-7280</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="service-hero">
+            <div class="service-hero-container">
+                <div class="service-hero-content">
+                    <h1>Carpet Cleaning</h1>
+                    <p>Your carpet does a lot more than you think. It’s where your kids play, your pets nap, and life
+                        happens. <b> GoFlow’s </b> carpet cleaning service gets deep into the fibers to lift away dirt,
+                        spills,
+                        and odors, leaving your home feeling brighter, softer, and cleaner than ever.</p>
+                    <a href="/pages/contact.html" class="cta-button">REQUEST A QUOTE</a>
+                </div>
+                <div class="vertical-carousel-container relative overflow-hidden rounded-xl">
+                    <div class="carousel-inner" id="carousel-inner">
+                        <img src="/images/2service/carpet5.png" alt="Cleaning professional 1" class="carousel-image">
+                        <img src="/images/2service/carpet6.png" alt="Cleaning professional 2" class="carousel-image">
+                        <img src="/images/2service/carpet7.png" alt="Cleaning professional 3" class="carousel-image">
+                    </div>
+                    <div
+                        class="carousel-controls absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 p-2 rounded-full bg-white bg-opacity-70">
+                        <div class="control-dot rounded-full" data-index="0"></div>
+                        <div class="control-dot rounded-full" data-index="1"></div>
+                        <div class="control-dot rounded-full" data-index="2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="container">
+                <h2 class="section-title">Benefits of Carpet Cleaning</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 4C35.046 4 44 12.954 44 24C44 35.046 35.046 44 24 44C12.954 44 4 35.046 4 24C4 12.954 12.954 4 24 4Z"
+                                    fill="#D6E4FF" opacity="0.4" />
+                                <path
+                                    d="M24 8C32.837 8 40 15.163 40 24C40 32.837 32.837 40 24 40C15.163 40 8 32.837 8 24C8 15.163 15.163 8 24 8Z"
+                                    fill="#4F7DF3" opacity="0.6" />
+                                <path
+                                    d="M24 12C30.627 12 36 17.373 36 24C36 30.627 30.627 36 24 36C17.373 36 12 30.627 12 24C12 17.373 17.373 12 24 12Z"
+                                    fill="#4F7DF3" />
+                                <path d="M24 20L24 24M24 28V24" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M20 24H28" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Improved Indoor Air Quality</h3>
+                        <p>Your carpet quietly collects dust, allergens, and everyday pollutants that can affect the air
+                            you breathe. Over time, these build up deep within the fibers. GoFlow’s professional carpet
+                            cleaning service clears away these hidden contaminants, restoring freshness and improving
+                            your home’s indoor air quality.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="20" fill="#D6E4FF" opacity="0.3" />
+
+                                <!-- Escudo de protección -->
+                                <path d="M24 6L12 12V20C12 28 16 34 24 38C32 34 36 28 36 20V12L24 6Z" fill="#4F7DF3"
+                                    opacity="0.8" stroke="#4F7DF3" stroke-width="2" />
+
+                                <!-- Checkmark en el centro -->
+                                <path d="M18 22L22 26L30 18" stroke="white" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+
+                                <!-- Partículas de alérgenos bloqueadas (con X) -->
+                                <g opacity="0.6">
+                                    <circle cx="10" cy="16" r="3" fill="#FF4444" opacity="0.3" />
+                                    <path d="M8.5 14.5L11.5 17.5M11.5 14.5L8.5 17.5" stroke="#FF4444" stroke-width="1.5"
+                                        stroke-linecap="round" />
+
+                                    <circle cx="38" cy="20" r="3" fill="#FF4444" opacity="0.3" />
+                                    <path d="M36.5 18.5L39.5 21.5M39.5 18.5L36.5 21.5" stroke="#FF4444"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </g>
+                            </svg>
+                        </div>
+                        <h3>Reduced Risk of Allergies and Asthma</h3>
+                        <p>If you or your loved ones struggle with allergies or asthma, your carpet could be part of the
+                            problem. GoFlow’s cleaning system lifts away the dust and pet dander that can trigger
+                            reactions, leaving your home healthier and easier to breathe in.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="20" fill="#D6E4FF" opacity="0.3" />
+
+                                <!-- Cruz médica/salud -->
+                                <rect x="22" y="12" width="4" height="24" rx="2" fill="#4F7DF3" />
+                                <rect x="12" y="22" width="24" height="4" rx="2" fill="#4F7DF3" />
+
+                                <!-- Círculo exterior (fortaleza) -->
+                                <circle cx="24" cy="24" r="14" stroke="#4F7DF3" stroke-width="2.5" fill="none"
+                                    opacity="0.5" />
+
+                                <!-- Símbolos de mejora (flechas hacia arriba) -->
+                                <g stroke="#22C55E" stroke-width="2.5" stroke-linecap="round">
+                                    <path d="M14 18L14 14M14 14L16 16M14 14L12 16" />
+                                    <path d="M34 18L34 14M34 14L36 16M34 14L32 16" />
+                                </g>
+
+                                <!-- Pulso/latido del corazón -->
+                                <path d="M10 28L14 28L16 24L18 32L20 28L24 28" stroke="#FF6B9D" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" opacity="0.6" />
+                            </svg>
+                        </div>
+                        <h3>Boosted Immune System</h3>
+                        <p>The buildup of dirt, dust, and other pollutants in your carpet can also impact your immune
+                            system. When your immune system is weakened, you become more susceptible to illness and
+                            disease.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="section-title">GoFlow Carpet Cleaning Process</h2>
+                <p class="process-intro">Our carpet cleaning involves all four industry standards of Chemistry, Heat,
+                    Agitation, and Time (CHAT) to leave nothing but clean carpets behind.</p>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <span class="checkmark">✓</span>
+                        <h3>Step 1<br>Pre-Treating & Agitating </h3>
+                        <p>After applying a pre-treatment spray, our counter-rotating <b>brushes gently scrub and
+                                refresh
+                                your carpet fibers</b>, loosening and lifting dirt, debris, hair, and soil from the
+                            carpet
+                            fibers, stuff your vacuum can't reach.</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="checkmark">✓</span>
+                        <h3>Step 2<br>Deep Clean with Engineered Water</h3>
+                        <p>We use a high-pH, ultra-clean water solution (no detergents, no sticky residue) to lift out
+                            deep-down dirt, oils and grime — then flush it away. You get fresher carpets, faster dry
+                            time and no residue left behind.”</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="checkmark">✓</span>
+                        <h3>Step 3<br>Rinsing & Drying</h3>
+                        <p>We use pressurized clean water and a powerful extractor to pull out dirt, oils, and moisture
+                            without over-wetting your carpet. Then, our air movers speed up airflow so your carpets dry
+                            fast and stay fresh.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <span class="checkmark">✓</span>
+                        <h3>Step 4<br>Protecting</h3>
+                        <p>Our optional protector spray acts as an invisible barrier against dirt and spills, preventing
+                            them from soaking or embedding into your carpet's fibers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="container grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+                <div class="info-image-h order-2 md:order-1">
+                    <img src="/images/2service/oftencarpet.jpg" alt="Carpet cleaning hose in a bedroom">
+                </div>
+                <div class="info-content order-1 md:order-2">
+                    <h2 class="section-title-small">How often should you clean your carpets?</h2>
+                    <p>Most carpet manufacturers require you to clean your carpets <b>at least once every 12-18
+                            months</b> to maintain the warranty. But, this may not be enough if you've got a busy
+                        household.</p>
+                    <p>The frequency of vacuuming and evidence of spots should determine how often your carpets need
+                        cleaning; not the calendar.</p>
+                    <p>Carpet is a surface that adds softness, warmth, and luxury to rooms in your home. At GoFlow, we
+                        clean your carpets in a way that leaves them looking newer longer.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            What makes GoFlow's carpet cleaning different?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>GoFlow uses <b>powerful extraction and soap-free solutions</b> that clean deep without
+                                leaving sticky residue. Your carpets stay fresh, soft, and cleaner for longer.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Can GoFlow remove stains from my carpet?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>We tackle most common stains like dirt, spills, and pet messes using professional-grade
+                                solutions and hot-water extraction. Some older or set-in stains may need extra
+                                treatment, but we'll always let you know before we start.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Do I need to vacuum before GoFlow comes?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Not necessarily! Our team pre-vacuums if needed to make sure the surface is ready for
+                                cleaning — but doing a quick vacuum beforehand can help speed things up.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            How fast do GoFlow carpets dry?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Most carpets dry in <b>4 to 8 hours</b>, depending on airflow and carpet type. We also
+                                use <b>high-speed air movers</b> to help them dry even faster.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Does GoFlow use harsh chemicals?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>No — our cleaning process is <b>safe for kids, pets, and the environment</b>. We use
+                                gentle, effective solutions that leave no sticky or chemical residue behind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="/logos/logow.png" alt="GoFlow Cleaning Services">
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61580189712132" target="_blank"
+                        aria-label="Síguenos en Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/nEkSWDRYoZL1RgtA6" target="_blank" aria-label="Síguenos en Google">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="#4285F4"
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                            <path fill="#34A853"
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                            <path fill="#FBBC05"
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                            <path fill="#EA4335"
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                fill="currentColor" />
+
+                        </svg>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">© Copyright by GoFlow. All rights reserved</p>
+                <p class="footer-legal">
+                    <a href="/pages/privacypolicy.html" class="footer-link">Privacy Policy</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 0c-2.76 0-5 2.24-5 5a5 5 0 00.26 1.48L8 16l4.74-9.52A5 5 0 0013 5c0-2.76-2.24-5-5-5zm0 7.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                    </svg>
+                    Saskatoon, SK
+                </div>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"
+                            fill="currentColor" />
+                    </svg>
+                    (639) 994-7280
+                </div>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 4.5L8 8.5L13.5 4.5" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M2 13H14C14.552 13 15 12.552 15 12V4C15 3.448 14.552 3 14 3H2C1.448 3 1 3.448 1 4V12C1 12.552 1.448 13 2 13Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                    allan@goflowservices.com
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <div class="hours-item">
+                    <strong>Monday to Friday</strong>
+                    <span>6:00 AM - 9:00 PM</span>
+                </div>
+                <div class="hours-item">
+                    <strong>Saturday & Sunday</strong>
+                    <span>8:00 AM - 6:00 PM</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>

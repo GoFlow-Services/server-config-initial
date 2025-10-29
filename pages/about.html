@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoFlow Services | About</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/logos/Logo.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#4F7DF3',
+                        'dark-blue': '#385EDB',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/logos/logo.png" alt="GoFlow Cleaning Services">
+            </div>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="/index.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a href="#services" class="nav-link dropdown-toggle">Services <span
+                            class="dropdown-arrow">▾</span></a>
+                    <div class="dropdown-menu">
+                        <a href="/pages/air-duct-cleaning.html" class="dropdown-item">
+                            <img src="/assets/air-duct-cleaning.svg" alt="Air Duct Icon" class="dropdown-icon">
+                            Furnace & Air Duct Cleaning
+                        </a>
+                        <a href="/pages/carpet-cleaning.html" class="dropdown-item">
+                            <img src="/assets/carpet-cleaning.svg" alt="Carpet Icon" class="dropdown-icon">
+                            Carpet Cleaning
+                        </a>
+                        <a href="/pages/residential-cleaning.html" class="dropdown-item">
+                            <img src="/assets/residential-cleaning.svg" alt="House Icon" class="dropdown-icon">
+                            Residential Cleaning
+                        </a>
+                    </div>
+                </div>
+                <a href="/pages/about.html" class="nav-link active">About</a>
+                <a href="/pages/contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="contact-info">
+                <a href="tel:+16399947280" class="phone-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"
+                            fill="currentColor" />
+                    </svg>
+                    <span>(639) 994-7280</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="service-hero">
+            <div class="service-hero-container">
+                <div class="service-hero-content">
+                    <h1>About GoFlow</h1>
+                    <p>Hey! We’re Allan and Rachel, the husband-and-wife team behind GoFlow. We started with a simple
+                        idea, that clean air and clean spaces make life better.<br><br>
+                        What began with one van, a few trusted tools, and a passion for doing things right has grown
+                        into a trusted, family-run business serving Saskatoon and surrounding areas. With Allan’s
+                        background in mechanical engineering and Rachel’s expertise in business and accounting, we built
+                        GoFlow on a foundation of quality, honesty, and care.<br><br>
+                        Today, we provide duct, furnace, carpet, and residential deep cleaning with one promise: clean
+                        every home like our own, and that’s what keeps our clients coming back.</p>
+                    <a href="/pages/contact.html" class="cta-button">REQUEST A QUOTE</a>
+                </div>
+                <div class="vertical-carousel-container relative overflow-hidden rounded-xl">
+                    <div class="carousel-inner" id="carousel-inner">
+                        <img src="/images/1service/choose.jpeg" alt="Cleaning professional 1" class="carousel-image">
+                        <img src="/images/1service/1service1.png" alt="Cleaning professional 2" class="carousel-image">
+                    </div>
+                    <div
+                        class="carousel-controls absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 p-2 rounded-full bg-white bg-opacity-70">
+                        <div class="control-dot rounded-full" data-index="0"></div>
+                        <div class="control-dot rounded-full" data-index="1"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Values Section - Why Choose Us -->
+        <section class="values-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <div class="values-grid">
+                    <!-- Fully insured -->
+                    <div class="value-card">
+                        <span class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                <path d="M9 12l2 2 4-4" />
+                            </svg>
+                        </span>
+                        <p>Fully insured for your peace of mind</p>
+                    </div>
+
+                    <!-- Certified technicians -->
+                    <div class="value-card">
+                        <span class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                        </span>
+                        <p>Certified and trained technicians you can trust</p>
+                    </div>
+
+                    <!-- Efficient equipment -->
+                    <div class="value-card">
+                        <span class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                        </span>
+                        <p>Efficient equipment for deep, thorough cleaning</p>
+                    </div>
+
+                    <!-- Transparent pricing -->
+                    <div class="value-card">
+                        <span class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                        </span>
+                        <p>Honest, transparent pricing — no hidden fees</p>
+                    </div>
+
+                    <!-- Satisfaction warranty -->
+                    <div class="value-card">
+                        <span class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6L9 17l-5-5" />
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                        </span>
+                        <p>Satisfaction warranty on every job</p>
+                    </div>
+
+                    <!-- Family-run -->
+                    <div class="value-card">
+                        <span class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg>
+                        </span>
+                        <p>Family-run and locally owned in Saskatoon</p>
+                    </div>
+
+                    <!-- Eco-friendly -->
+                    <div class="value-card">
+                        <span class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                                <path d="M12 6v6l4 2" />
+                                <path d="M16.24 7.76a6 6 0 0 1-8.49 8.49" />
+                            </svg>
+                        </span>
+                        <p>Eco-friendly options available upon request</p>
+                    </div>
+
+                    <!-- Reliable service -->
+                    <div class="value-card">
+                        <span class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </span>
+                        <p>Reliable, respectful service from start to finish</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="/logos/logow.png" alt="GoFlow Cleaning Services">
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61580189712132" target="_blank"
+                            aria-label="Síguenos en Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+
+                        <a href="https://maps.app.goo.gl/nEkSWDRYoZL1RgtA6" target="_blank"
+                            aria-label="Síguenos en Google">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="#4285F4"
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                <path fill="#34A853"
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                <path fill="#FBBC05"
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                <path fill="#EA4335"
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="currentColor" />
+
+                            </svg>
+                        </a>
+                    </div>
+
+                    <p class="footer-copyright">© Copyright by GoFlow. All rights reserved</p>
+                    <p class="footer-legal">
+                        <a href="/pages/privacypolicy.html" class="footer-link">Privacy Policy</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="contact-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8 0c-2.76 0-5 2.24-5 5a5 5 0 00.26 1.48L8 16l4.74-9.52A5 5 0 0013 5c0-2.76-2.24-5-5-5zm0 7.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                        </svg>
+                        Saskatoon, SK
+                    </div>
+                    <div class="contact-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"
+                                fill="currentColor" />
+                        </svg>
+                        (639) 994-7280
+                    </div>
+                    <div class="contact-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 4.5L8 8.5L13.5 4.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M2 13H14C14.552 13 15 12.552 15 12V4C15 3.448 14.552 3 14 3H2C1.448 3 1 3.448 1 4V12C1 12.552 1.448 13 2 13Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                        allan@goflowservices.com
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <div class="hours-item">
+                        <strong>Monday to Friday</strong>
+                        <span>6:00 AM - 9:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <strong>Saturday & Sunday</strong>
+                        <span>8:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="/scripts/main.js"></script>
+</body>
+
+</html>

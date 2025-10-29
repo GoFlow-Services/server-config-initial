@@ -5,5 +5,11 @@
       "destination": "https://goflowservices.com/",
       "permanent": false
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path*",        
+      "destination": "/pages/:path*" 
+    }
   ]
 }

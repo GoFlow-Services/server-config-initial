@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoFlow Services | Residential Cleaning</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/logos/Logo.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#4F7DF3',
+                        'dark-blue': '#385EDB',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/logos/logo.png" alt="GoFlow Cleaning Services">
+            </div>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+
+            <nav class="nav-menu">
+                <a href="/index.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a href="#services" class="nav-link dropdown-toggle active">Services <span
+                            class="dropdown-arrow">▾</span></a>
+                    <div class="dropdown-menu">
+                        <a href="air-duct-cleaning.html" class="dropdown-item">
+                            <img src="/assets/air-duct-cleaning.svg" alt="Air Duct Icon" class="dropdown-icon">
+                            Furnace & Air Duct Cleaning
+                        </a>
+                        <a href="/pages/carpet-cleaning.html" class="dropdown-item">
+                            <img src="/assets/carpet-cleaning.svg" alt="Carpet Icon" class="dropdown-icon">
+                            Carpet Cleaning
+                        </a>
+                        <a href="/pages/residential-cleaning.html" class="dropdown-item">
+                            <img src="/assets/carpet-cleaning.svg" alt="House Icon" class="dropdown-icon">
+                            Residential Cleaning
+                        </a>
+                    </div>
+                </div>
+                <a href="/pages/about.html" class="nav-link">About</a>
+                <a href="/pages/contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="contact-info">
+                <a href="tel:+16399947280" class="phone-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"
+                            fill="currentColor" />
+                    </svg>
+                    <span>(639) 994-7280</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="service-hero">
+            <div class="service-hero-container">
+                <div class="service-hero-content">
+                    <h1>Residential Cleaning</h1>
+                    <p>Your home deserves to shine — whether you’ve just moved in, finished renovations, or it’s time
+                        for a deep refresh. GoFlow’s residential cleaning service clears away dust, debris, and everyday
+                        buildup, leaving every surface spotless and ready to enjoy. From regular upkeep to
+                        post-construction clean-ups, we make your home feel brand-new again.</p>
+                    <a href="/pages/contact.html" class="cta-button">REQUEST A QUOTE</a>
+                </div>
+                <div class="vertical-carousel-container relative overflow-hidden rounded-xl">
+                    <div class="carousel-inner" id="carousel-inner">
+                        <img src="/images/3service/residential4.jpg" alt="Cleaning professional 1"
+                            class="carousel-image">
+                        <img src="/images/3service/residential5.jpg" alt="Cleaning professional 2"
+                            class="carousel-image">
+                        <img src="/images/3service/residential6.jpg" alt="Cleaning professional 3"
+                            class="carousel-image">
+                    </div>
+                    <div
+                        class="carousel-controls absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 p-2 rounded-full bg-white bg-opacity-70">
+                        <div class="control-dot rounded-full" data-index="0"></div>
+                        <div class="control-dot rounded-full" data-index="1"></div>
+                        <div class="control-dot rounded-full" data-index="2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="container">
+                <h2 class="section-title">Benefits of Residential Cleaning</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="20" fill="#D6E4FF" opacity="0.3" />
+
+                                <!-- Casa -->
+                                <path d="M10 22L24 10L38 22V36C38 37.1 37.1 38 36 38H12C10.9 38 10 37.1 10 36V22Z"
+                                    fill="#4F7DF3" opacity="0.8" stroke="#4F7DF3" stroke-width="2" />
+
+                                <!-- Techo -->
+                                <path d="M10 22L24 10L38 22" stroke="#4F7DF3" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+
+                                <!-- Corazón en el centro (salud) -->
+                                <path
+                                    d="M24 28C24 28 18 24 18 20C18 18 19 16 21 16C22 16 23 17 24 18C25 17 26 16 27 16C29 16 30 18 30 20C30 24 24 28 24 28Z"
+                                    fill="#FF6B9D" />
+
+                                <!-- Ventana -->
+                                <rect x="28" y="18" width="4" height="4" rx="1" fill="white" opacity="0.6" />
+
+                                <!-- Símbolo de salud (cruz pequeña) -->
+                                <circle cx="36" cy="14" r="4" fill="#22C55E" />
+                                <path d="M36 12V16M34 14H38" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3>A Healthier Home</h3>
+                        <p>We remove hidden dust, allergens, and post-construction debris so your family can breathe
+                            cleaner, fresher air.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="20" fill="#D6E4FF" opacity="0.3" />
+
+                                <!-- Reloj principal -->
+                                <circle cx="24" cy="24" r="12" fill="#4F7DF3" stroke="#4F7DF3" stroke-width="2" />
+                                <circle cx="24" cy="24" r="10" fill="white" />
+
+                                <!-- Manecillas del reloj (mostrando tiempo ahorrado) -->
+                                <path d="M24 24V16" stroke="#4F7DF3" stroke-width="2.5" stroke-linecap="round" />
+                                <path d="M24 24L30 28" stroke="#4F7DF3" stroke-width="2" stroke-linecap="round" />
+
+                                <!-- Centro del reloj -->
+                                <circle cx="24" cy="24" r="1.5" fill="#4F7DF3" />
+
+                                <!-- Familia/personas (lo que importa) -->
+                                <g transform="translate(32, 8)">
+                                    <circle cx="4" cy="3" r="2" fill="#FF6B9D" />
+                                    <path d="M2 6C2 6 2 5 4 5C6 5 6 6 6 6V8H2V6Z" fill="#FF6B9D" />
+
+                                    <circle cx="10" cy="3.5" r="1.5" fill="#FF6B9D" opacity="0.7" />
+                                    <path d="M8.5 6.5C8.5 6.5 8.5 5.5 10 5.5C11.5 5.5 11.5 6.5 11.5 6.5V8H8.5V6.5Z"
+                                        fill="#FF6B9D" opacity="0.7" />
+                                </g>
+
+                                <!-- Flecha de tiempo recuperado -->
+                                <path d="M10 10L8 8L10 6" stroke="#22C55E" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Time Back for What Matters</h3>
+                        <p>We handle the scrubbing, sweeping, and shining so you can spend more time with family,
+                            friends, and the things you love.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="20" fill="#D6E4FF" opacity="0.3" />
+
+                                <!-- Casa -->
+                                <path d="M10 24L24 12L38 24V36C38 37.1 37.1 38 36 38H12C10.9 38 10 37.1 10 36V24Z"
+                                    fill="#4F7DF3" stroke="#4F7DF3" stroke-width="2.5" />
+
+                                <!-- Puerta y ventana -->
+                                <rect x="19" y="28" width="10" height="10" rx="1" fill="white" opacity="0.7" />
+                                <circle cx="30" cy="22" r="2" fill="white" opacity="0.6" />
+
+                                <!-- Estrellas de "brand new" (brillante) -->
+                                <g stroke="#FFA500" stroke-width="2" stroke-linecap="round">
+                                    <!-- Estrella 1 -->
+                                    <path d="M14 14L14 18M12 16L16 16" />
+                                    <!-- Estrella 2 -->
+                                    <path d="M34 10L34 14M32 12L36 12" />
+                                    <!-- Estrella 3 -->
+                                    <path d="M38 20L38 24M36 22L40 22" />
+                                </g>
+
+                                <!-- Sparkles pequeños -->
+                                <circle cx="16" cy="20" r="1.5" fill="#FFA500" />
+                                <circle cx="32" cy="18" r="1" fill="#FFA500" opacity="0.7" />
+                                <circle cx="36" cy="28" r="1.2" fill="#FFA500" opacity="0.8" />
+                            </svg>
+                        </div>
+                        <h3>A Home That Feels Brand-New</h3>
+                        <p>From top to bottom, every clean leaves your space refreshed, polished, and ready to impress.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="section-title">GoFlow Residential Cleaning Process</h2>
+                <p class="process-intro">At GoFlow, we believe a clean home starts with a clear process. Our residential
+                    cleaning system is designed to deliver spotless results.</p>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <span class="checkmark">✓</span>
+                        <h3>Step 1<br>Initial Home Consultation</h3>
+                        <p>After you schedule your cleaning, we’ll take the time to understand your home’s specific
+                            needs. Whether you’re looking for a quick touch-up, a full deep clean, or a detailed
+                            post-construction cleanup.</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="checkmark">✓</span>
+                        <h3>Step 2<br>2 Hours of Cleaning</h3>
+                        <p>Generally, we believe that a quality clean can’t be done in less than two hours, that’s our
+                            starting point. Our services include kitchens and appliances, bathrooms and toilets,
+                            bedrooms, fixtures, windows, and etc. </p>
+                    </div>
+                    <div class="process-step">
+                        <span class="checkmark">✓</span>
+                        <h3>Step 3<br>Add-Ons</h3>
+                        <p>We’re skilled and trained to handle additional services such as carpet, duct, rug, tile and
+                            grout, and exterior window cleaning. Please let your GoFlow technician know if you’d like to
+                            add any of these to your service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="standard-services-section">
+            <div class="container text-center">
+                <h2 class="section-title">Standard Services</h2>
+                <p class="section-intro-text">If you want the best and highest quality house cleaning service for your
+                    home or office, you can't beat our revolutionary cleaning process.</p>
+
+
+                <div class="services-grid mt-10">
+
+                    <div class="service-item">
+                        <div class="service-image-container">
+                            <img src="/images/3service/bathrooms2.jpg" alt="Deep Cleaning Bathrooms"
+                                class="service-image">
+                        </div>
+                        <div class="service-label bg-primary-blue">Deep Cleaning Bathrooms</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image-container">
+                            <img src="/images/3service/kitchen.jpg" alt="Deep Cleaning Kitchens" class="service-image">
+                        </div>
+                        <div class="service-label bg-primary-blue">Deep Cleaning Kitchens</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image-container">
+                            <img src="/images/3service/sweeping.jpg" alt="Sweeping & Mopping" class="service-image">
+                        </div>
+                        <div class="service-label bg-primary-blue">Sweeping & Mopping</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image-container">
+                            <img src="/images/3service/vacuuming3.jpg" alt="Vacuuming" class="service-image">
+                        </div>
+                        <div class="service-label bg-primary-blue">Vacuuming</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image-container">
+                            <img src="/images/3service/dusting.jpg" alt="Dusting" class="service-image">
+                        </div>
+                        <div class="service-label bg-primary-blue">Dusting</div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image-container">
+                            <img src="/images/3service/baseboards.jpg" alt="Wiping Down Baseboards"
+                                class="service-image">
+                        </div>
+                        <div class="service-label bg-primary-blue">Wiping Down Baseboards</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            How long does a residential cleaning take?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Every home is different, but most GoFlow cleanings take a minimum of two hours. We
+                                believe quality results can’t be rushed and our team takes the time to do it right,
+                                leaving your home fresh, spotless, and ready to enjoy.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            What’s included in a standard cleaning?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Our standard service covers kitchens and appliances, bathrooms, bedrooms, fixtures,
+                                windows, and sweeping/mopping. We focus on high-touch areas and surfaces that collect
+                                the most dust and grime to deliver a noticeably cleaner home.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Do you offer post-construction or renovation cleaning?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes! We specialize in post-construction and renovation clean-ups. Our team removes fine
+                                dust, debris, and residue left behind by contractors, so your home looks and feels
+                                move-in ready.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Can I add extra services like carpet or duct cleaning?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Absolutely. We’re fully equipped and trained to provide carpet, rug, duct, tile & grout,
+                                and exterior window cleaning. Just let your GoFlow technician know if you’d like to
+                                include any add-ons, and we’ll customize your service.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Do I need to be home during the cleaning?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>It’s up to you. Many clients prefer to be home for the first visit, while others provide
+                                us with access instructions for future appointments. Either way, we treat your home with
+                                care and respect as if it were our own.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            What should I do before my cleaning appointment?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>We recommend picking up personal items, fragile valuables so our team can focus on deep
+                                cleaning. Don’t worry about moving heavy furniture — we’ll handle the rest.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Do you bring your own cleaning supplies and equipment?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, GoFlow provides all professional-grade cleaning tools and safe, effective products.
+                                If you prefer we use your own supplies, just let us know ahead of time — we’re happy to
+                                accommodate.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            How do I book a cleaning?
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Booking is simple — you can call, message, or fill out the contact form on our website.
+                                We’ll confirm your appointment, discuss your cleaning goals, and match you with the
+                                right service package.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="/logos/logow.png" alt="GoFlow Cleaning Services">
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61580189712132" target="_blank"
+                        aria-label="Síguenos en Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/nEkSWDRYoZL1RgtA6" target="_blank" aria-label="Síguenos en Google">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="#4285F4"
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                            <path fill="#34A853"
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                            <path fill="#FBBC05"
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                            <path fill="#EA4335"
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                fill="currentColor" />
+
+                        </svg>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">© Copyright by GoFlow. All rights reserved</p>
+                <p class="footer-legal">
+                    <a href="/pages/privacypolicy.html" class="footer-link">Privacy Policy</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 0c-2.76 0-5 2.24-5 5a5 5 0 00.26 1.48L8 16l4.74-9.52A5 5 0 0013 5c0-2.76-2.24-5-5-5zm0 7.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                    </svg>
+                    Saskatoon, SK
+                </div>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"
+                            fill="currentColor" />
+                    </svg>
+                    (639) 994-7280
+                </div>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 4.5L8 8.5L13.5 4.5" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M2 13H14C14.552 13 15 12.552 15 12V4C15 3.448 14.552 3 14 3H2C1.448 3 1 3.448 1 4V12C1 12.552 1.448 13 2 13Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                    allan@goflowservices.com
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <div class="hours-item">
+                    <strong>Monday to Friday</strong>
+                    <span>6:00 AM - 9:00 PM</span>
+                </div>
+                <div class="hours-item">
+                    <strong>Saturday & Sunday</strong>
+                    <span>8:00 AM - 6:00 PM</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>

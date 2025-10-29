@@ -28,3 +28,14 @@ yarn-debug.log*
 yarn-error.log*
 
 /.DS_Store
+images/.DS_Store
+images/2service/.DS_Store
+.gitignore
+.gitignore
+logos/.DS_Store
+images/contact/.DS_Store
+images/about/.DS_Store
+images/1service/.DS_Store
+images/.DS_Store
+images/3service/.DS_Store
+images/.DS_Store
